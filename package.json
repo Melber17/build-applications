@@ -1,0 +1,31 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "build for applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "webpack",
+    "babel"
+  ],
+  "author": "Evgeniy melber17@mail.ru",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-block-scoping": "^7.12.13",
+    "@babel/plugin-transform-classes": "^7.13.0",
+    "@babel/plugin-transform-template-literals": "^7.13.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13"
+  }
+}
