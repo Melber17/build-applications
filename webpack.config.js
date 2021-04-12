@@ -2,13 +2,11 @@ module.exports = {
 	mode: "development",
 	module: {
 		rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: [
-                    {loader: 'babel-loader'}
-                ]
-            },
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: [{ loader: "babel-loader" }],
+			},
 			{
 				test: /\.(png|jpg|jpeg|gif|ico)$/,
 				use: [
@@ -31,6 +29,18 @@ module.exports = {
 							name: "[name].[ext]",
 						},
 					},
+				],
+			},
+			{
+				test: /\.(css)$/,
+				use: [ "style-loader","css-loader"],
+			},
+			{
+				test: /\.(s[ca]ss)$/,
+				use: [
+					{ loader: "style-loader" },
+					{ loader: "css-loader" },
+					{ loader: "sass-loader" },
 				],
 			},
 		],
