@@ -4,7 +4,8 @@
   "description": "build for applications",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack serve",
+    "build": "webpack --env.mod=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,7 +16,10 @@
   "author": "Evgeniy melber17@mail.ru",
   "license": "ISC",
   "dependencies": {
+    "webpack-dev-server": "^3.11.2",
     "core-js": "^3.10.1",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
